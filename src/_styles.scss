@@ -1,0 +1,65 @@
+/* Main Styles */
+	body {		
+		margin: 0;
+		padding: 0;
+		background:$green;
+	}
+	.bg {
+		position:relative;
+		width:100%;
+		margin:11px auto 0;
+		border-top:1px solid white;
+	}
+	.content {
+		position:absolute;
+		width:460px;
+		height:520px;
+
+		h1 {
+			display:block;
+			position:relative;
+			text-indent:-9000px;
+			width:370px;
+			height:370px;
+			margin:0 auto;
+			background:url(../images/home_logo.png) no-repeat center center;
+		}
+		a, a:visited {
+			display:block;
+			position:absolute;
+			bottom:36px;
+			right:42px;
+			width:177px;
+			height:177px;
+			background:url(../images/home_link_off.png) no-repeat center center;
+			color:white;
+			text-align:center;
+			text-transform:uppercase;
+			font:500 22px/190px $proxima;
+			text-decoration:none;
+			letter-spacing:4px;
+			-webkit-transition: all 100ms ease-in-out;
+			-moz-transition: all 100ms ease-in-out;
+	        -ms-transition: all 100ms ease-in-out;
+	        -o-transition: all 100ms ease-in-out;
+			transition: all 100ms ease-in-out;
+			&:hover {
+				width:228px;
+				height:228px;
+				right:-7px;
+				bottom:15px;
+				background: url(../images/home_link.png) no-repeat center center;
+				font-size:31px;
+				line-height:240px;
+				letter-spacing:4px;
+			}
+			&.first {
+				left:42px;
+				right:auto;
+				&:hover {
+					left:-7px;
+					right:auto;
+				}
+			}
+		}
+	}
